@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form
+      id="survey-form"
+      action="https://formspree.io/f/mwkzgqlb"
+      method="post"
+    >
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Name" />
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email" />
+      <label for="number" id="number-label">Number</label>
+      <input
+        min="5"
+        max="15"
+        type="number"
+        id="number"
+        placeholder="Enter Your Number"
+      />
+      <label for="languages">Choose a language</label>
+      <select name="languages" id="dropdown">
+        <option value="english">English</option>
+        <option value="french">French</option>
+      </select>
+      <input type="radio" value="Definitely" />
+      <label for="definitely">Definitely</label>
+      <input type="radio" value="" />
+      <label for="not sure">Not sure</label>
+      <input
+        type="checkbox"
+        name="one"
+        id="one"
+        value="Front-End Project"
+        required
+      />
+      <label for="one">Front-End Project</label>
+      <input
+        type="checkbox"
+        name="two"
+        id="two"
+        value="Back-End Project"
+        required
+      />
+      <label for="two">Back-End Project</label>
+      <input
+        type="checkbox"
+        name="three"
+        id="three"
+        value="Graphics Design"
+        required
+      />
+      <label for="three">Graphics Design</label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="Any comments or suggestions?"
+        required
+      ></textarea>
+      <button type="button" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
